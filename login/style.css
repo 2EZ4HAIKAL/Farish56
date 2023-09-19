@@ -10,12 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(kopi.jpeg) ;
+    background: url(images.jpeg) ;
     background-position: center;
 }
 .warp {
     width: 420px;
-    background: orange;
+    background: chocolate;
     
     color: #fff;
     border-radius: 10px;
