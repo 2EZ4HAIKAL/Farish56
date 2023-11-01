@@ -1,0 +1,119 @@
+
+
+/* Reset box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set the base styles for the body */
+body {
+  background-color: pink; /* Mengubah warna latar belakang menjadi pink */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Memusatkan horizontal */
+  align-items: center; /* Memusatkan vertikal */
+  min-height: 100vh; /* Untuk memastikan elemen di tengah halaman */
+}
+
+/* Style the product container */
+.product-container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #C0C0C0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Add this to evenly distribute the two child containers */
+  border-radius: 10px; /* Add some border-radius for a smoother look */
+}
+
+
+
+/* Style the product image container */
+.product-image-container {
+  width: 45%; /* Reduce the width slightly to give more space to the product info */
+  margin: 20px auto; /* Center the image */
+}
+
+/* Style the product info container */
+.product-info-container {
+  width: 50%; /* Increase the width slightly to give more space to the product info */
+  padding: 20px;
+  text-align: center; /* Center align the content */
+}
+
+/* Style images to be responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove any extra space below images */
+  margin: 0 auto; /* Center images */
+}
+
+/* Style the form container */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Style labels and input fields */
+label, input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style labels */
+label {
+  width: 30%;
+  padding-right: 10px;
+  text-align: right; /* Right-align labels for consistency */
+}
+
+/* Style input fields */
+input[type="text"] {
+  width: 70%;
+}
+
+/* Style the button */
+input[type="button"] {
+  background-color: pink; /* Mengubah warna tombol menjadi pink */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Style card-related input fields */
+input[type="text"][name="card-number"],
+input[type="text"][name="expiry-date"],
+input[type="text"][name="cvv"] {
+  width: 100%; /* Set the width to 100% for these fields */
+  margin-top: 10px; /* Adjust margin for consistency */
+}
+
+/* Style the heading */
+h1 {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 24px; /* Increase the font size */
+}
+
+/* Style the price */
+.price {
+  color: pink; /* Mengubah warna harga menjadi pink */
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center; /* Center-align the price */
+  margin-top: 20px; /* Add some spacing below the price */
+}
+

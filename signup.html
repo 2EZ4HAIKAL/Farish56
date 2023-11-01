@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: pink; /* Warna latar belakang pink */
+        }
+
+        #signup-form {
+            text-align: center;
+        }
+
+        #success-message {
+            font-weight: bold;
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Sign Up</h1>
+        <form id="signup-form" action="proses_pendaftaran.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+            
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <p id="success-message" style="display: none;">Berjaya Sign Up!</p>
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var isSuccess = true;
+            if (isSuccess) {
+                document.getElementById("success-message").style.display = "block";
+                // Arahkan ke paparan lain setelah pendaftaran berhasil (ganti URL sesuai kebutuhan)
+                setTimeout(function() {
+                    window.location.href = "index.html";
+                }, 2000); // Misalnya, arahkan setelah 2 detik (2000ms)
+            }
+        });
+    </script>
+</body>
+</html>

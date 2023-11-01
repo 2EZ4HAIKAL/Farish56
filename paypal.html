@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Pembayaran Ice Cream Triozz</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('bg ice cream.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            color: #333;
+        }
+    
+        form {
+            background-color: #FFFFFF;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .img-container {
+            text-align: center;
+        }
+    
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .logo-container img {
+            width: 80px;
+            height: auto;
+            margin: 10px;
+        }
+    
+        .payment-options {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    
+        .payment-button {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #0056b3;
+        }
+        .paypal-button {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.paypal-button:hover {
+    background-color: #001f4d;
+}
+
+    </style>
+    
+</head>
+<body>
+    <h1>Halaman Pembayaran Ice Cream Triozz</h1>
+    <form action="index.html" method="post">
+        <label for="nama">Nama Anda: </label>
+        <input type="text" id="nama" name="nama" required><br>
+
+        <label for="alamat">Alamat: </label>
+        <input type="text" id="alamat" name="alamat" required><br>
+
+        <label for="e-mail address">E-mail Address: </label>
+        <input type="text" id="e-mail address" name="e-mail address" required><br>
+
+        <label for="nombor_telefon">Nombor Telefon: </label>
+        <input type="text" id="nombor telefon" name="nombor_telefon" required><br>
+        <br>
+        <div class="logo-container">
+            <div>
+                <img src="logo paypal.jpg" alt="PayPal">
+                <label for="paypal">
+                    <input type="radio" id="paypal" name="metode_pembayaran" value="PayPal"> 
+                </label>
+            </div>
+            <div>
+                <img src="logo visa.jpg" alt="Visa">
+                <label for="visa">
+                    <input type="radio" id="visa" name="metode_pembayaran" value="Visa"> 
+                </label>
+            </div>
+            <div>
+                <img src="logo mastercard.jpg" alt="Mastercard">
+                <label for="mastercard">
+                    <input type="radio" id="mastercard" name="metode_pembayaran" value="Mastercard"> 
+                </label>
+            </div>
+            <div>
+                <img src="logo shopee.png" alt="ShopeePay">
+                <label for="shopeepay">
+                    <input type="radio" id="shopeepay" name="metode_pembayaran" value="ShopeePay"> 
+                </label>
+            </div>
+        </div>
+    </form>
+    <p>
+        <a href="succesful.html" class="paypal-button">BAYAR</a>
+
+
+    </p>
+</body>
+</html>
